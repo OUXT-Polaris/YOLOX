@@ -523,8 +523,10 @@ int main(int argc, char** argv) {
     // delete the pointer to the float
     delete blob;
     // destroy the engine
+    /*
     context->destroy();
     engine->destroy();
     runtime->destroy();
+    */
     return 0;
 }
