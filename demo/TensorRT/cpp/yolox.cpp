@@ -432,7 +432,8 @@ void doInference(IExecutionContext& context, float* input, float* output, const 
     assert(engine.getBindingDataType(inputIndex) == nvinfer1::DataType::kFLOAT);
     const int outputIndex = engine.getBindingIndex(OUTPUT_BLOB_NAME);
     assert(engine.getBindingDataType(outputIndex) == nvinfer1::DataType::kFLOAT);
-    int mBatchSize = engine.getMaxBatchSize();
+    // int mBatchSize = 
+    engine.getMaxBatchSize();
 
     // Create GPU buffers on device
     CHECK(cudaMalloc(&buffers[inputIndex], 3 * input_shape.height * input_shape.width * sizeof(float)));
