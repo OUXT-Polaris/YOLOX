@@ -31,7 +31,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(yolox ${PROJECT_SOURCE_DIR}/yolox.cpp)
 target_link_libraries(yolox nvinfer)
-target_link_libraries(yolox /usr/local/cuda-10.2/targets/aarch64-linux/lib/cudart)
+target_link_libraries(yolox /usr/local/cuda-10.2/targets/aarch64-linux/lib/libcudart.so)
 target_link_libraries(yolox ${OpenCV_LIBS})
 
 add_definitions(-O2 -pthread)
