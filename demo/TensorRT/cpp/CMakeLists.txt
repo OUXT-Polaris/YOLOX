@@ -14,8 +14,9 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 # include and link dirs of cuda and tensorrt, you need adapt them if yours are different
 # cuda
 include_directories(/usr/local/targets/aarch64-linux/include)
-include_directories(/usr/local/cuda-10.2/targets/aarch64-linux/include)
 link_directories(/usr/local/targets/aarch64-linux/lib)
+include_directories(/usr/local/cuda-10.2/targets/aarch64-linux/include)
+link_directories(/usr/local/cuda-10.2/targets/aarch64-linux/lib)
 # cudnn
 include_directories(/usr/local/targets/aarch64-linux/include)
 link_directories(/usr/local/targets/aarch64-linux/lib)
