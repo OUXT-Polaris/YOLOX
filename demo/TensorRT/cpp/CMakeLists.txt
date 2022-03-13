@@ -7,6 +7,7 @@ add_definitions(-std=c++11)
 option(CUDA_USE_STATIC_CUDA_RUNTIME OFF)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_BUILD_TYPE Debug)
+cmake_policy(SET CMP0060 NEW)
 
 find_package(CUDA REQUIRED)
 
