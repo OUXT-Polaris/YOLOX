@@ -17,8 +17,7 @@ from yolox.exp import get_exp
 from yolox.utils import fuse_model, get_model_info, postprocess, vis
 
 IMAGE_EXT = [".jpg", ".jpeg", ".webp", ".bmp", ".png"]
-COCO_CLASSES = ('gate','tommy_gun','badge','bootlegger','g-man','bottle','barrel','phone')
-COCO_CLASSES = ('black_buoy','black_totem','blue_circle','blue_cross','blue_orange_buoy','blue_totem','dock','green_buoy','green_circle','green_buoy','green_cross','green_totem','green_triangle','light_buoy','orange_buoy','red_buoy','red_circle','red_cross','red_triangle','red_totem','white_buoy')
+COCO_CLASSES = ('black_buoy','black_totem','blue_circle','blue_cross','blue_orange_buoy','blue_totem','dock','green_buoy','green_circle','green_cross','green_totem','green_triangle','light_buoy','orange_buoy','red_buoy','red_circle','red_cross','red_triangle','red_totem','white_buoy')
 
 
 def make_parser():
