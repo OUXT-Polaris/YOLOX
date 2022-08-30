@@ -20,7 +20,7 @@ class Exp(MyExp):
         self.test_size = (416, 416)
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
         self.enable_mixup = False
-        self.max_epoch = 3000
+        self.max_epoch = 300
 
         # Define yourself dataset path
         self.data_dir = "datasets/ouxt-2022-dataset"
